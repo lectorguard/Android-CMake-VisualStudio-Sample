@@ -1,3 +1,4 @@
-*.gradle
-*.xml
-*.properties
+build.gradle
+settings.gradle
+AndroidManifest.xml
+gradle-wrapper.properties
