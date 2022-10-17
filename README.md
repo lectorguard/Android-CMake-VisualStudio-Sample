@@ -27,12 +27,12 @@ This is a small example android native-activity project using cmake and the grad
 * Make sure the cmake arguments fit your system 
 
 ```
-	-DCMAKE_SYSTEM_NAME=Android 
-	-DCMAKE_SYSTEM_VERSION=24 // Android SDK Version
-	-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a // Architecture, you can change this setting within Visual Studio
-	-DCMAKE_ANDROID_NDK=C:/Microsoft/AndroidNDK/android-ndk-r23c // Make sure this path is correct
-								     // The ndk is installed by Visual Studio, you might need to update this path
-	-DCMAKE_ANDROID_STL_TYPE=c++_static 
+-DCMAKE_SYSTEM_NAME=Android 
+-DCMAKE_SYSTEM_VERSION=24 // Android SDK Version
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a // Architecture, you can change this setting within Visual Studio
+-DCMAKE_ANDROID_NDK=C:/Microsoft/AndroidNDK/android-ndk-r23c // Make sure this path is correct
+							     // The ndk is installed by Visual Studio, you might need to update this path
+-DCMAKE_ANDROID_STL_TYPE=c++_static 
 ``` 
 * Double check the path of the android ndk, maybe your visual studio installation uses another ndk
 * Execute the GenerateProjectFiles.bat file
