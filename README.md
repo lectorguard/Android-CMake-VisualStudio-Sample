@@ -23,7 +23,7 @@ This is a small example android native-activity project using cmake and the grad
 
 ## Installation Guide 
 
-* Open GenerateProjectFiles.bat in a text editor of your choice 
+* Open GenerateVisualStudioProject.bat in a text editor of your choice 
 * Make sure the cmake arguments fit your system 
 
 ```
