@@ -10,6 +10,8 @@ set(${CMAKE_C_FLAGS}, "${CMAKE_C_FLAGS}")
 add_library(native_app_glue STATIC ${ANDROID_NDK_PATH}/sources/android/native_app_glue/android_native_app_glue.c)
 
 set(CMAKE_CXX_FLAGS -std=gnu++20)
+# Debug Information format, gdwarf2 supports local variables in debugger 
+set(CMAKE_CXX_FLAGS_DEBUG "-g2 -gdwarf-2")
 
 # Export ANativeActivity_onCreate(),
 # Refer to: https://github.com/android-ndk/ndk/issues/381.
