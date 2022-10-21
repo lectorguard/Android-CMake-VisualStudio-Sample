@@ -90,6 +90,11 @@ The package manager failed to install the apk: '/data/local/tmp/NativeAndroidAct
 * In many cases uninstalling the app and rebuilding the visual studio project fixes the issue
 * When switching configuaration, you always need to uninstall the old apk on your device
 
+### Segmentation Fault when installing the apk
+
+* If you changed the CMakeLists.txt, make sure you update the reference from the gradle android project to the native-activity project
+* You can easily do this by first removing the native-activity reference from the gradle project and afterwards adding it again
+
 
 ## Signing apks for realease builds
 
