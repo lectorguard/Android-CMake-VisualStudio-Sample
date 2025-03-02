@@ -1,3 +1,12 @@
+>[!WARNING]   
+>I would no longer recommend using Visual Studio to build native Android apps. The last version of the Android NDK that is compatible with the Visual Studio Android App Template is r23c.
+>All later versions either require modifications to the NDK or are incompatible with the current Visual Studio implementation. This also applies to the cross-platform library options.
+>The main reasons for the lack of support are structural changes and the replacement of gdb with lldb as the debugger in later NDK releases (NDK r23 is the last version with gdb support). The last NDK version that works out of the box is 3 years old, making native Android development with VS inconvenient.
+>For more information, see the Visual Studio Community threads: [Support for LLDB](https://developercommunity.visualstudio.com/t/Support-for-Android-NDK-25-and-LLDB/10326202),
+> [NDK Header Search Path Issue](https://developercommunity.visualstudio.com/t/Visual-Studio-2022-cannot-build-an-Andro/10692622).
+>A good alternative with support for the latest Android SDKs and NDKs including a well working debugger using Visual Studio Code can be found [here](https://github.com/lectorguard/Android-CMake-VSCode-Sample).
+
+
 # Android Cmake Visual Studio Sample Project
 
 This is a small example android native-activity project using cmake and the gradle visual studio template project to create and debug android applications
